@@ -51,8 +51,8 @@ def main():
     try:                
         with open(args.file):   # with automatically closes the file
             pass                               
-    except IOError as ex:
-        print(ex)
+    except IOError as e:
+        print(e)
     else:
         process_filearg(args.file)
         start()
@@ -74,8 +74,8 @@ def build_pdf():
         print_debug("working directory: "+str(wd_str))
     try:
         os.chdir(wd_str)
-    except OSError as ex:
-        print(ex)
+    except OSError as e:
+        print(e)
     else:
         logfile_str = root_dir+"/"+"build.log"
         print("logfile: {}").format(logfile_str)
@@ -84,12 +84,9 @@ def build_pdf():
                 for i in range(passes):
                     print("build pass {} ...").format(i)
                     call(build_call(compiler, "-interaction=nonstopmode", texfile), stdout=logfile)
-        except IOError as ex:
-            print(ex)
-        try:
             copyfile(wd_str+"/"+pdf, root_dir+"/"+pdf)
-        except IOError as ex:
-            print(ex)
+        except IOError as e:
+            print(e)
 
 def sync_build_dir():
     """
