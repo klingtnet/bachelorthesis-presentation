@@ -83,7 +83,7 @@ def build_pdf():
             with open(logfile_str, "w") as logfile:
                 for i in range(passes):
                     print("build pass {} ...").format(i)
-                    call(build_call(compiler, "-interaction=nonstopmode", texfile), stdout=logfile)
+                    check_call(build_call(compiler, "-interaction=nonstopmode", texfile), stdout=logfile)
             copyfile(wd_str+"/"+pdf, root_dir+"/"+pdf)
         except IOError as e:
             print(e)

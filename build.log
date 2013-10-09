@@ -187,24 +187,12 @@ y))) (./header.tex
 (/usr/share/texmf/tex/latex/tipa/t3enc.def
 (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmss.fd)))
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
-
-Package microtype Warning: You don't seem to be using pdftex.
-(microtype)                `microtype' only works with pdftex.
-(microtype)                Try running `pdflatex' instead of `xelatex'.
-
-) (/usr/share/texlive/texmf-dist/tex/xelatex/polyglossia/polyglossia.sty
-(/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/makecmds/makecmds.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex)))
-
-Package polyglossia Warning: File gloss-ngerman.ldf does not exist!
-I will nevertheless try to use hyphenation patterns for ngerman. on input line 
-4.
-
-(/usr/share/texlive/texmf-dist/tex/xelatex/polyglossia/gloss-english.ldf))
-(./variables.tex) (./presentation.aux)
+(/var/lib/texmf/tex/generic/babel/babel.sty
+(/usr/share/texlive/texmf-dist/tex/generic/babel/ngermanb.ldf
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty)))
+(./style/sprd_color.tex) (./variables.tex) (./presentation.aux)
 (/usr/share/texmf/tex/latex/tipa/t3cmr.fd)
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -224,6 +212,16 @@ ionary/translator-months-dictionary-English.dict)
 tionary/translator-numbers-dictionary-English.dict)
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-theorem-dic
 tionary/translator-theorem-dictionary-English.dict) (./presentation.nav)
-[1] (./presentation.aux) )
-Output written on presentation.pdf (1 page).
+[1] (./presentation.toc) [2]
+
+LaTeX Font Warning: Font shape `OT1/HelveticaNeue45Light(0)/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead
+(Font)              for symbol `glqq' on input line 33.
+
+[3] [4] (./presentation.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+Output written on presentation.pdf (4 pages).
 Transcript written on presentation.log.
