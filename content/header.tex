@@ -1,11 +1,22 @@
 \usepackage{fontspec}
-%\usepackage{microtype}     % microtype works only with pdflatex
 \usepackage[ngerman]{babel} % polyglossia makes problems with beamer
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
 
 %
 % temporaray packages
 %
 \usepackage{blindtext}
+
+\setmainfont{Museo Slab}  % will be ignored by beamer
+\setsansfont{Helvetica Neue 45 Light}
+\setmonofont{Consolas}
+\setmathrm{Latin Modern Roman}
 
 \newfontfamily\museo{Museo Slab}
 \newfontfamily\helvetica{Helvetica Neue 45 Light}   % Helvetica Sans makes problems as .ttf
@@ -13,7 +24,10 @@
 \setbeamerfont{block title}{family=\museo}
 \setbeamerfont{block body}{family=\helvetica}
 \setbeamerfont{title}{family=\museo}
+
 %
 % color themes and styles
 %
-%\usetheme{Frankfurt}
+\usecolortheme{Sprd}
+
+\setbeamertemplate{navigation symbols}{}    % Turns off PDF navigation symbols

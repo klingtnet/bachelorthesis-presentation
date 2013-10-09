@@ -29,7 +29,11 @@ Package ifpdf Warning: Someone has redefined \pdfoutput.
 
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty)
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo)
+
+Class beamer Warning: ``mathserif'' is obsolete. Use font theme ``serif'' with 
+option ``onlymath'' on input line 346.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo)
 (/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
@@ -191,9 +195,9 @@ y))) (./header.tex
 (/usr/share/texlive/texmf-dist/tex/generic/babel/ngermanb.ldf
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def)))
 (/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty)))
-(./style/sprd_color.tex) (./variables.tex) (./presentation.aux)
-(/usr/share/texmf/tex/latex/tipa/t3cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty))
+(./beamercolorthemeSprd.sty)) (./style/sprd_color.tex) (./variables.tex)
+(./presentation.aux) (/usr/share/texmf/tex/latex/tipa/t3cmr.fd)
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 ABD: EveryShipout initializing macros
@@ -218,7 +222,9 @@ LaTeX Font Warning: Font shape `OT1/HelveticaNeue45Light(0)/m/n' undefined
 (Font)              using `OT1/cmr/m/n' instead
 (Font)              for symbol `glqq' on input line 33.
 
-[3] [4] (./presentation.aux)
+[3] (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd) [4]
+(./presentation.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 

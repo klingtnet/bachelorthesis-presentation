@@ -1,5 +1,0 @@
-\beamer@endinputifotherversion {3.10pt}
-\select@language {ngerman}
-\beamer@sectionintoc {1}{Inhaltsverzeichnis}{2}{0}{1}
-\beamer@sectionintoc {2}{Einführung}{3}{0}{2}
-\beamer@subsectionintoc {2}{1}{Beispiel}{4}{0}{2}
