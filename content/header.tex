@@ -19,7 +19,7 @@
 \setmathrm{Latin Modern Roman}
 
 \newfontfamily\museo{Museo Slab}
-\newfontfamily\helvetica{Helvetica Neue 45 Light}   % Helvetica Sans makes problems as .ttf
+\newfontfamily\helvetica{Helvetica Neue 45 Light}   % Helvetica Sans makes problems as .ttf, displayed as slanted
 \setbeamerfont{frametitle}{family=\museo}
 \setbeamerfont{block title}{family=\museo}
 \setbeamerfont{block body}{family=\helvetica}
@@ -28,6 +28,21 @@
 %
 % color themes and styles
 %
-\usecolortheme{Sprd}
+\usetheme{Sprd}
 
-\setbeamertemplate{navigation symbols}{}    % Turns off PDF navigation symbols
+\usepackage[absolute, overlay]{textpos}
+\newcommand{\sprdlogo}{
+    \setlength{\TPHorizModule}{1pt}
+    \setlength{\TPVertModule}{1pt}
+    % textblock{}{x,y}: pos(x) = leftUpperCorner + (x * \TPHorizModule), pos(y) = leftUpperCorner - (y * \TPVertModule)
+    \begin{textblock}{1}(45,0)
+        \includegraphics[height=12mm]{resources/spreadshirt_logos/sprd_logo_screen_rgb}
+    \end{textblock}
+} 
+
+\addtobeamertemplate{frametitle}{}{
+    \sprdlogo
+}
+
+% hide beamer navigation buttons
+\beamertemplatenavigationsymbolsempty

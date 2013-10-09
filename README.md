@@ -21,3 +21,7 @@ Bachelorverteidigung
 * Consolas
 
 If you don't have some or all of these fonts, change them in the content/header.tex file.
+
+## Installation
+
+Simply call `make` in the project root. Enjoy!

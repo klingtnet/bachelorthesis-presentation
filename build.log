@@ -196,8 +196,13 @@ y))) (./header.tex
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def)))
 (/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
 (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty))
-(./beamercolorthemeSprd.sty)) (./style/sprd_color.tex) (./variables.tex)
-(./presentation.aux) (/usr/share/texmf/tex/latex/tipa/t3cmr.fd)
+(./beamerthemeSprd.sty (./beamercolorthemeSprd.sty) (./beamerouterthemeSprd.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
+Package: textpos 2012/06/01 1.7h, absolute positioning of text on the page
+Grid set 16 x 16 = 28.45274pt x 16.00467pt
+TextBlockOrigin set to 0pt x 0pt
+)) (./variables.tex) (./presentation.aux)
+(/usr/share/texmf/tex/latex/tipa/t3cmr.fd)
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 ABD: EveryShipout initializing macros
@@ -216,18 +221,29 @@ ionary/translator-months-dictionary-English.dict)
 tionary/translator-numbers-dictionary-English.dict)
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-theorem-dic
 tionary/translator-theorem-dictionary-English.dict) (./presentation.nav)
-[1] (./presentation.toc) [2]
+[1] (./presentation.toc)
+<use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
+Overfull \hbox (25.17082pt too wide) in paragraph at lines 25--25
+[][]  
+[2] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
+Overfull \hbox (25.17082pt too wide) in paragraph at lines 43--43
+[][]  
+[3] (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+<use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
+Overfull \hbox (25.17082pt too wide) in paragraph at lines 61--61
+[][]  
+[4]
 
 LaTeX Font Warning: Font shape `OT1/HelveticaNeue45Light(0)/m/n' undefined
 (Font)              using `OT1/cmr/m/n' instead
-(Font)              for symbol `glqq' on input line 33.
+(Font)              for symbol `glqq' on input line 67.
 
-[3] (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd) [4]
-(./presentation.aux)
+[5] [6] (./presentation.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  )
-Output written on presentation.pdf (4 pages).
+(see the transcript file for additional information)
+Output written on presentation.pdf (6 pages).
 Transcript written on presentation.log.

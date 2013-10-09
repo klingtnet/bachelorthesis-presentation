@@ -1,14 +1,13 @@
 \documentclass[aspectratio=169, 12pt, mathserif]{beamer}
 
 \input{header}
-\input{style/sprd_color}
 \input{variables}
 
-\title{\thesisTitle{}}
+\title[Generierung einer Client-Bibliothek aus einer WebService Beschr.]{\thesisTitle{}}
 \subtitle{Bachelorverteidigung}
 
 \author[A. Linz]{Andreas Linz}
-\institute[]{\thesisUniversityDepartment}
+\institute[]{\thesisUniversity{} - \thesisUniversityDepartment}
 
 \date{\today}
 
@@ -16,7 +15,7 @@
 \keywords{\thesisKeywords{}}
 
 \begin{document}
-    \begin{frame}
+    \begin{frame}[plain]
         \titlepage
     \end{frame} 
     
@@ -28,7 +27,18 @@
     \section{Einführung}
     \begin{frame}{Einführung}
         \begin{block}{Blindtext}
-            \blindtext[1]
+            Dies hier ist ein Blindtext zum Testen von Textausgaben. Wer
+diesen Text liest, ist selbst schuld. Der Text gibt lediglich den
+Grauwert der Schrift an. Ist das wirklich so? Ist es gleichgültig,
+ob ich schreibe: Dies ist ein Blindtext“ oder Huardest
+”
+”
+gefburn“? Kjift -- mitnichten! Ein Blindtext bietet mir wichtige
+Informationen. An ihm messe ich die Lesbarkeit einer Schrift,
+ihre Anmutung, wie harmonisch die Figuren zueinander stehen
+und prüfe, wie breit oder schmal sie läuft. Ein Blindtext sollte
+möglichst viele verschiedene Buchstaben enthalten und in der
+Originalsprache gesetzt sein.
         \end{block}
     \end{frame}
 
@@ -36,7 +46,9 @@
     \begin{frame}{Beispiel}
         Test
         \begin{exampleblock}{Titel}
-            \texttt{public static void main();}
+            \texttt{int main(void) \{}\\
+            \texttt{printf("Hello!");}\\
+            \texttt{\}}
         \end{exampleblock}
         \begin{alertblock}{Titel}
             \begin{equation}
@@ -46,5 +58,32 @@
             \right]
             \end{equation}
         \end{alertblock}
+    \end{frame}
+
+    \begin{frame}
+        \begin{block}{More about nothing \ldots}
+            \blindtext[1]
+        \end{block}
+    \end{frame}
+
+    \section{Listen}
+    \begin{frame}
+        \begin{block}{eine Liste}
+            \begin{enumerate}
+                \item A
+                \item B
+            \end{enumerate}
+        \end{block}
+
+        \begin{block}{Beschreibung}
+            \begin{description}
+                \item[foo] An ihm messe ich die Lesbarkeit einer Schrift,
+ihre Anmutung, wie harmonisch die Figuren zueinander stehen
+und prüfe, wie breit oder schmal sie läuft.
+                \item[bar] An ihm messe ich die Lesbarkeit einer Schrift,
+ihre Anmutung, wie harmonisch die Figuren zueinander stehen
+und prüfe, wie breit oder schmal sie läuft.
+            \end{description}        
+        \end{block}
     \end{frame}
 \end{document}
