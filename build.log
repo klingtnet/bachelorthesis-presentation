@@ -199,8 +199,6 @@ y))) (./header.tex
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def)
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg))
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty))
 (./beamerthemeSprd.sty (./beamercolorthemeSprd.sty) (./beamerouterthemeSprd.sty
 )) (/usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
 Package: textpos 2012/06/01 1.7h, absolute positioning of text on the page
@@ -258,14 +256,17 @@ Overfull \hbox (25.17082pt too wide) in paragraph at lines 27--27
 [9]) (./end.tex (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
 <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 8--8
+Overfull \hbox (25.17082pt too wide) in paragraph at lines 9--9
 [][]  
 [10] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 17--17
+Overfull \hbox (25.17082pt too wide) in paragraph at lines 14--14
 [][]  
-[11]) (./presentation.aux) )
+[11] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
+Overfull \hbox (25.17082pt too wide) in paragraph at lines 23--23
+[][]  
+[12]) (./presentation.aux) )
 (see the transcript file for additional information)
-Output written on presentation.xdv (11 pages, 64256 bytes).
+Output written on presentation.xdv (12 pages, 68976 bytes).
 Transcript written on presentation.log.
 This is XeTeX, Version 3.1415926-2.4-0.9998 (TeX Live 2012/Debian)
  restricted \write18 enabled.
@@ -468,8 +469,6 @@ y))) (./header.tex
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def)
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg))
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty))
 (./beamerthemeSprd.sty (./beamercolorthemeSprd.sty) (./beamerouterthemeSprd.sty
 )) (/usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
 Package: textpos 2012/06/01 1.7h, absolute positioning of text on the page
@@ -527,12 +526,15 @@ Overfull \hbox (25.17082pt too wide) in paragraph at lines 27--27
 [9]) (./end.tex (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
 <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 8--8
+Overfull \hbox (25.17082pt too wide) in paragraph at lines 9--9
 [][]  
 [10] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 17--17
+Overfull \hbox (25.17082pt too wide) in paragraph at lines 14--14
 [][]  
-[11]) (./presentation.aux) )
+[11] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
+Overfull \hbox (25.17082pt too wide) in paragraph at lines 23--23
+[][]  
+[12]) (./presentation.aux) )
 (see the transcript file for additional information)
-Output written on presentation.pdf (11 pages).
+Output written on presentation.pdf (12 pages).
 Transcript written on presentation.log.
