@@ -12,7 +12,7 @@ import sys
 import os
 from shutil import copyfile
 import argparse
-from subprocess import check_call, call, Popen
+from subprocess import check_call, call
 
 debug = False
 compiler = "xelatex"
@@ -83,7 +83,10 @@ def build_pdf():
             with open(logfile_str, "w") as logfile:
                 for i in range(passes):
                     print("build pass {} ...").format(i)
-                    check_call(build_call(compiler, "-interaction=nonstopmode", texfile), stdout=logfile)
+                    if i < passes-1:
+                        check_call(build_call(compiler, "-interaction=nonstopmode", "-no-pdf",texfile), stdout=logfile)
+                    else:
+                        check_call(build_call(compiler, "-interaction=nonstopmode", texfile), stdout=logfile)
             copyfile(wd_str+"/"+pdf, root_dir+"/"+pdf)
         except IOError as e:
             print(e)

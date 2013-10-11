@@ -7,7 +7,7 @@
 SHELL=/bin/bash
 SCRIPT=build.py
 TEXFILE=content/presentation.tex
-OPTS=--passes 1
+OPTS=--passes 2 --debug
 
 all:
 	@echo "building presentation ..."
