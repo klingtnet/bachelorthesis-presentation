@@ -17,3 +17,7 @@ clean:
 	@echo "cleaning temporary files ..."
 	ls -l .build
 	rm --recursive --verbose --interactive=once .build
+
+present:
+	impressive --page-progress --supersample --fullscreen --geometry 1280x720 presentation.pdf
+	# press t twice in the first page, to activate time tracking mode in terminal window!

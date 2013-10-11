@@ -1,0 +1,137 @@
+A nice presentation tool.
+
+Usage: impressive [OPTION...] <INPUT(S)...>
+
+You may either play a PDF file, a directory containing image files or
+individual image files.
+
+Input options:
+  -r,  --rotate <n>       rotate pages clockwise in 90-degree steps
+       --scale            scale images to fit screen (not used in PDF mode)
+       --supersample      use supersampling (only used in PDF mode)
+  -s                      --supersample for PDF files, --scale for image files
+  -I,  --script <path>    set the path of the info script
+  -u,  --poll <seconds>   check periodically if the source file has been
+                          updated and reload it if it did
+  -X,  --shuffle          put input files into random order
+  -h,  --help             show this help text and exit
+
+Output options:
+  -o,  --output <dir>     don't display the presentation, only render to .png
+  -f,  --fullscreen       do NOT start in fullscreen mode
+  -g,  --geometry <WxH>   set window size or fullscreen resolution
+  -A,  --aspect <X:Y>     adjust for a specific display aspect ratio (e.g. 5:4)
+  -G,  --gamma <G[:BL]>   specify startup gamma and black level
+
+Page options:
+  -i,  --initialpage <n>  start with page <n>
+  -p,  --pages <A-B>      only cache pages in the specified range;
+                          implicitly sets -i <A>
+  -w,  --wrap             go back to the first page after the last page
+  -a,  --auto <seconds>   automatically advance to next page after some seconds
+  -O,  --autooverview <x> automatically derive page visibility on overview page
+                            -O first = show pages with captions
+                            -O last  = show pages before pages with captions
+  -Q,  --autoquit         quit after the last slide (no effect with --wrap)
+
+Display options:
+  -t,  --transition <trans[,trans2...]>
+                          force a specific transitions or set of transitions
+  -l,  --listtrans        print a list of available transitions and exit
+  -F,  --font <file>      use a specific TrueType font file for the OSD
+  -S,  --fontsize <px>    specify the OSD font size in pixels
+  -C,  --cursor <F[:X,Y]> use a .png image as the mouse cursor
+  -L,  --layout <spec>    set the OSD layout (please read the documentation)
+  -z,  --zoom <factor>    set zoom factor (integer number, default: 2)
+  -x,  --fade             fade in at start and fade out at end
+       --spot-radius <px> set the initial radius of the spotlight, in pixels
+
+Timing options:
+  -M,  --minutes          display time in minutes, not seconds
+       --clock            show current time instead of time elapsed
+  -d,  --duration <time>  set the desired duration of the presentation and show
+                          a progress bar at the bottom of the screen
+  -T,  --transtime <ms>   set transition duration in milliseconds
+  -D,  --mousedelay <ms>  set mouse hide delay for fullscreen mode (in ms)
+  -B,  --boxfade <ms>     set highlight box fade duration in milliseconds
+  -Z,  --zoomtime <ms>    set zoom animation duration in milliseconds
+  -q,  --page-progress    shows a progress bar based on the position in the
+                          presentation (based on pages, not time)
+
+Advanced options:
+  -c,  --cache <mode>     set page cache mode:
+                            -c none       = disable caching completely
+                            -c memory     = store cache in RAM
+                            -c disk       = store cache on disk temporarily
+                            -c persistent = store cache on disk persistently
+       --cachefile <path> set the persistent cache file path (implies -cp)
+  -b,  --noback           don't pre-render images in the background
+  -P,  --gspath <path>    set path to GhostScript or pdftoppm executable
+  -R,  --meshres <XxY>    set mesh resolution for effects (default: 48x36)
+  -e,  --noext            don't use OpenGL texture size extensions
+  -V,  --overscan <px>    render PDF files <px> pixels larger than the screen
+       --nologo           disable startup logo and version number display
+       --noclicks         disable page transition via left/right mouse click
+  -H,  --half-screen      show OSD on right half of the screen only
+
+For detailed information, visit http://impressive.sourceforge.net/
+
+Usage:
+
+On startup, Impressive will display a black screen with the program logo at the center. If caching is enabled, but background rendering is disabled, all pages of the presentation will then be rendered once. A bar in the lower half of the screen displays the progress of this operation. Any key (except for Q and Esc) or mouse click skips this process, with the effect that Impressive will render the remaining pages on demand. Please note that the overview page will not be complete until every page has been rendered at least once. In other words, if the precaching process was skipped, placeholders will be displayed for all pages that have not been rendered yet. By default, Impressive will build up the cache in the background while the presentation runs. Thus, the progress bar will not appear and the preparation will only take the amount of time required to render the first two pages of the presentation.
+After this initialization process, Impressive will switch to the first page directly and without any transition. The following keyboard and mouse operations are available from this moment on:
+
+Q key or Esc key
+  Quit Impressive immediately.
+LMB (left mouse button), Page Down key, Cursor Down key, Cursor Right key or Spacebar
+  Go to the next page (using a transition).
+RMB (right mouse button), Page Up key, Cursor Up key, Cursor Left key or Backspace key
+  Go to the previous page (using a transition).
+Home key / End key
+  Go directly to the first or last page of the presentation.
+L key
+  Return to the last (most recently displayed) page. This can be used to toggle back and forth between two pages.
+F key
+  Toggle fullscreen mode. Unfortunately, this does not work on Windows systems.
+Tab key or MMB (middle mouse button)
+  Zoom back to the overview page. While in overview mode, a page can be selected with the mouse and activated with the left mouse button. The right or middle mouse button or the Tab key leave overview mode without changing the current page.
+LMB over a PDF hyperlink
+  Jump to the page referenced by the hyperlink. Two types of hyperlinks are supported: Links that point to some other page of the same document, and URL hyperlinks like Web links and e-mail addresses. This feature is only available if pdftk is installed. Furthermore, xdg-open from the freedesktop.org Portland project is required for URL links on non-Win32 platforms. Please note that the hyperlink feature will not work properly when pages are rotated.
+click&drag with LMB (left mouse button)
+  Create a new highlight box. While at least one highlight box is defined on the current page, the page itself will be shown in a darker and blurry rendition. Only the highlight boxes will be displayed in their original lightness and sharpness.
+  if a page with highlight boxes is left, the boxes will be saved and restored the next time this page is shown again.
+RMB (right mouse button) over a highlight box
+  If the right mouse button is clicked while the mouse cursor is above a highlight box, the box will be removed. If the last box on a page is removed, the page will turn bright and sharp again.
+S key
+  Save the info script associated with the current presentation. The main purpose for this is to permanently save highlight boxes or keyboard shortcuts, so they will be restored the next time this presentation is started.
+T key
+  Activate or deactivate the time display at the upper-right corner of the screen. If the timer is activated while the very first page of the presentation is shown, it activates »time tracking» mode. In this mode, a report of all pages visited with their display duration, enter and leave times will be written to standard output. This can be very useful when preparing presentations.
+R key
+  Reset the presentation timer.
+Return key or Enter key
+  Toggle spotlight mode. In this mode, the page is darkened in the same way as if highlight boxes are present, but instead of (or in addition to) the boxes, a circular “spotlight” will be shown around the mouse cursor position, following every motion of the mouse cursor.
++ key / – key or mouse wheel
+  Adjust the spotlight radius.
+Z key
+  Toggle zoom mode. When this key is first pressed, the current page will zoom in. The page will be displayed at double size, but in its original resolution (i.e. it will be blurry). Impressive will re-render the page at the new resolution if the graphics hardware supports it. During this time, Impressive will not accept any input, so don't even think about clicking the mouse or pressing keys before the image gets crisp again.
+  In zoom mode, all other functions will work as normal. Any operations that leave the current page, such as flipping the page or entering  the overview screen, will leave zoom mode, too.
+[ / ] key
+  Adjust the gamma value of the display (might not be supported on every hardware).
+{ / } key
+  Adjust the black level of the display (might not be supported on every hardware).
+\ key
+  Revert gamma and black level back to normal.
+O key
+  This will toggle the »visible on overview page« flag of the current page. The result will not be visible immediately, but it can be saved to the info script (using the S key) and will be in effect the next time the presentation is started.
+I key
+  This will toggle the skip flag of the current page. A page marked as skipped will not be reachable with the normal forward/backward navigation keys.
+B key / W key
+  Fade to black or white, respectively. This feature can be used if a whiteboard or blackboard in front of the projection area is to be used during the presentation. Using these two keys, the screen will fade into a solid color. On any keypress or mouse click, it will fade back to normal. These keys are not available in overview mode.
+click&drag with RMB (right mouse button) in zoom mode
+  Move the visible part of the page in zoom mode.
+Cursor keys in overview mode
+  Navigate through pages.
+Alt+Tab keys
+  Leaves fullscreen mode on Unix-like systems to facilitate task switching while running full-screen presentations.
+
+Any other alphanumeric (A-z, 0-9) or function key (F1-F12) can be used to assign shortcuts to pages that require quick access. If one of the keys is pressed together with Shift, the currently displayed page is associated with this key. To recall the page later, it is sufficient to press the shortcut key again. Shortcuts can be permanently stored with the S key.
