@@ -8,6 +8,7 @@
 \usepackage[hidelinks, colorlinks=false]{hyperref}
 \usepackage{csquotes}
 \usepackage{multicol}
+\usepackage{paralist}   %compacitem
 
 \usepackage{tikz}
 \usetikzlibrary{trees}
@@ -17,8 +18,12 @@
 \usetikzlibrary{positioning}
 
 \usepackage{fontspec}
+\newfontfamily\museo{Museo Slab}
+\newfontfamily\helvetica{Helvetica Neue 45 Light}   % Helvetica Sans makes problems as .ttf, displayed as slanted
+
 \setmainfont{Museo Slab}  % will be ignored by beamer
 \setsansfont{Helvetica Neue 45 Light}
 \setmonofont{Consolas}
 \setmathrm{Latin Modern Roman}
 \setkomafont{pagehead}{\normalfont\normalcolor}
+\addtokomafont{disposition}{\museo} % section headings
