@@ -1,17 +1,45 @@
 \section{Hauptteil}
 
 \subsection{Web Services}
-\begin{frame}{Web Services}
-    \ldots
+\begin{frame}{RESTful Web Service}
+    \begin{block}{REST}
+        \begin{itemize}
+            \item \emph{Representational State Transfer} (Gegenständlicher Zustandstransfer)
+            \item Softwarearchitekturstil für Webanwendungen
+            \item Anwendungen bestehen aus \emph{Ressourcen} mit eindeutigem Bezeichner (\cref{restURI}) %(alles was sich über Bezeichner referenzieren lässt, z.B. Dokumente, Dienste oder Sammlungen von Diensten)
+            \item Zustand einer Ressource ist eine \emph{Repräsentation}
+            \item Aktionen mit einer REST-API über den Austausch von Repräsentationen
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \centering
+        \[
+            \underbrace{\texttt{http://api.spreadshirt.net/api/v1/}}_{Basis-URL}\underbrace{\overbrace{\texttt{baskets/84}}^{Warenkorb}\overbrace{\texttt{/item/42}}^{Artikel}}_{Ressource}
+        \]
+        \caption{Beispiel-URI, um den Artikel 42 aus dem Warenkorb 84 anzusprechen}
+        \label{restURI}
+    \end{figure}
+    RESTful Web Service ist eine Webanwendung die den REST Prinzipien entspricht
 \end{frame}
 
 \subsection{Dokumentbeschreibungssprachen}
-\begin{frame}{XSD}
-    \ldots
-\end{frame}
-
-\begin{frame}{WADL}
-    \ldots
+\begin{frame}[squeeze]{Dokumentbeschreibungssprachen}
+    \begin{block}{WADL}
+        \begin{itemize}
+            \item maschinenlesbare Beschreibung einer HTTP-basierten Webanwendung
+            \item XML Syntax
+            \item Baumgrammatik
+        \end{itemize}
+    \end{block}
+    \begin{block}{XSD}
+        \begin{itemize}
+            \item Dokumentbeschreibungssprache zur Definition von Datentypen
+            \item XML-Syntax, XSD ist selber ein gültiges XML-Dokument
+        \end{itemize}
+    \end{block}
 \end{frame}
 
 \subsection{Codegenerierung}
@@ -26,23 +54,75 @@
     \end{block}
 \end{frame}
 
-\begin{frame}{}
+\begin{frame}{Generatorformen}
+    \begin{block}{Klassifikation nach Generierungsmenge}
+        \begin{itemize}
+            \item teilweise
+            \begin{itemize}
+                \item Inline-Code Expander
+                \item Mixed-Code Generator
+                \item Partial-Class Generator
+            \end{itemize}
+            \item vollständig (Tier-Generator)
+            \item mehrfach (n-Tier Generator)
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\subsection{Datenmodelle \& Codegenerator}
+\begin{frame}{Datenmodelle}
+    Eingabe des Generators
+    \begin{itemize}
+        \item Applikationsmodell:
+        \begin{itemize}
+            \item REST-Modell
+            \item Schema-Modell
+        \end{itemize}
+        \item Sprachenmodell
+        \begin{itemize}
+            \item kapselt Zielsprache
+            \item enthält Semantik
+            \item Syntax in Ausgabemodul (LanguageVisitor, siehe \cref{sequence})
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Codegenerator}
     \begin{figure}
         \resizebox{\textwidth}{!}{
             \input{resources/generation_sequence}
         }
-        \caption{Sequenzdiagramm des Generators}
-    \end{figure}
-\end{frame}
-
-\subsection{Datenmodelle \& Codegenerator}
-\begin{frame}{Datenmodelle \& Codegenerator}
-    \begin{figure}
-        \includegraphics[width=\textwidth]{resources/languagemodel}
+        \caption{Sequenzdiagramm des Generators für die Spreadshirt-API}
+        \label{sequence}
     \end{figure}
 \end{frame}
 
 \subsection{Client-Bibliothek}
-\begin{frame}{Client-Bibliothek}
-    \ldots
+\begin{frame}{Datenklassen}
+    \begin{itemize}
+        \item zielsprachenabhängige Repräsentation der Typen aus der XML-Schema Beschreibung
+        \item Variablen bilden die Attribute und Elemente aus dem Schematyp ab
+        \item Getter- und Setter-Methoden für alle Variablen
+        \item Methoden zur Serialisierung und Deserialisierung in, bzw. aus, XML oder JSON
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Ressourcenklassen}
+    \begin{itemize}
+        \item zielsprachenabhängige Abbildung der Ressourcen-
+beschreibungen aus WADL-Datei
+        \item Methoden der Klassen entsprechen den Methoden der abgebildeten Ressource
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{statische Klassen}
+    \begin{itemize}
+        \item wurden manuell erstellt
+        \item enthalten gemeinsam genutzten Code ohne variable Bestandteile
+        \item Bibliothek enthält zwei dieser Klassen:
+        \begin{itemize}
+            \item Kommunikation über HTTP-Methoden mit der API
+            \item Kapselung der Authentifizierung
+        \end{itemize}
+    \end{itemize}
 \end{frame}
