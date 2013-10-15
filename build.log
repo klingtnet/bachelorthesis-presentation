@@ -1,7 +1,7 @@
 This is XeTeX, Version 3.1415926-2.4-0.9998 (TeX Live 2012/Debian)
  restricted \write18 enabled.
 entering extended mode
-(./presentation.tex
+(./handout.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, et
 hiopic, farsi, arabic, pinyin, croatian, bulgarian, ukrainian, russian, slovak,
@@ -14,38 +14,69 @@ speranto, coptic, welsh, irish, interlingua, serbian, serbianc, slovenian, friu
 lan, romansh, estonian, romanian, armenian, uppersorbian, turkish, afrikaans, i
 celandic, kurmanji, polish, portuguese, galician, catalan, spanish, swedish, th
 ai, loaded.
-(/usr/share/texmf/tex/latex/beamer/base/beamer.cls
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasercs.sty)
-Document Class: beamer 2010/06/21 development version 3.10 A class for typesett
-ing presentations (rcs-revision a6b1a8434d30)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasemodes.sty
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasedecode.sty))
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseoptions.sty
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
+Document Class: scrartcl 2012/05/15 v3.11 KOMA-Script document class (article)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package scrlfile, 2011/03/09 v3.09 KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
 
-Package ifpdf Warning: Someone has redefined \pdfoutput.
+))) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocbasic.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize12pt.clo)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
+Package typearea, 2012/05/15 v3.11 KOMA-Script package (type area)
+                  Copyright (C) Frank Neukam, 1992-1994
+                  Copyright (C) Markus Kohm, 1994-
 
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty)
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
-
-Class beamer Warning: ``mathserif'' is obsolete. Use font theme ``serif'' with 
-option ``onlymath'' on input line 346.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo)
-(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+)) (./header_handout.tex (/var/lib/texmf/tex/generic/babel/babel.sty
+(/usr/share/texlive/texmf-dist/tex/generic/babel/ngermanb.ldf
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg)
 (/usr/share/texlive/texmf-dist/tex/xelatex/xetex-def/xetex.def)))
-(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xetexconfig/hyperref.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty))
+
+Package hyperref Message: Driver (autodetected): hxetex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/stringenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+(/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def)
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty)
+(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex)
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty))
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex))
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex))
@@ -87,120 +118,6 @@ option ``onlymath'' on input line 346.
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex)
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex)
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex)))
-(/usr/share/texmf/tex/latex/pgf/utilities/xxcolor.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
-(/usr/share/texlive/texmf-dist/tex/xelatex/xetexconfig/hyperref.cfg)
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
-
-Package hyperref Message: Stopped early.
-
-)
-
-Package hyperref Message: Driver (autodetected): hxetex.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/stringenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaserequires.sty
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasecompatibility.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasefont.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)))
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetranslator.sty
-(/usr/share/texmf/tex/latex/beamer/base/translator/translator.sty
-(/usr/share/texmf/tex/latex/beamer/base/translator/translator-language-mappings
-.tex))) (/usr/share/texmf/tex/latex/beamer/base/beamerbasemisc.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetwoscreens.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseoverlay.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetitle.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasesection.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseframe.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseverbatim.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseframesize.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseframecomponents.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasecolor.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasenotes.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetoc.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetemplates.sty
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseauxtemplates.sty
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseboxes.sty)))
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaselocalstructure.sty
-(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty))
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasenavigation.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetheorems.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty))
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasethemes.sty))
-(/usr/share/texmf/tex/latex/beamer/base/themes/theme/beamerthemedefault.sty
-(/usr/share/texmf/tex/latex/beamer/base/themes/font/beamerfontthemedefault.sty)
-
-(/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemedefault.st
-y)
-(/usr/share/texmf/tex/latex/beamer/base/themes/inner/beamerinnerthemedefault.st
-y)
-(/usr/share/texmf/tex/latex/beamer/base/themes/outer/beamerouterthemedefault.st
-y))) (./header.tex
-(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3names.sty
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3bootstrap.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3basics.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3expan.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3tl.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3seq.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3int.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3quark.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prg.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3clist.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3token.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prop.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3msg.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3file.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3skip.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3keys.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3fp.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3box.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3coffins.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3color.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3luatex.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
-(/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty)
-*************************************************
-* LaTeX warning: "xparse/redefine-command"
-* 
-* Redefining document command \oldstylenums with arg. spec. 'm' on line 107.
-*************************************************
-) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1enc.def)
-(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmr.fd))
-(/usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty
-(/usr/share/texmf/tex/latex/tipa/t3enc.def
-(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmss.fd)))
-(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
-(/var/lib/texmf/tex/generic/babel/babel.sty
-(/usr/share/texlive/texmf-dist/tex/generic/babel/ngermanb.ldf
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def)))
-(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
-(/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def)
-(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg))
-(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty)
-(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex)
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex)
 (/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty)
@@ -256,88 +173,78 @@ s.multipart.code.tex
 (/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.c
 ode.tex)))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryposit
-ioning.code.tex) (./resources/tikzStyles.tex) (./beamerthemeSprd.sty
-(./beamercolorthemeSprd.sty) (./beamerouterthemeSprd.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
-Package: textpos 2012/06/01 1.7h, absolute positioning of text on the page
-Grid set 16 x 16 = 28.45274pt x 16.00467pt
-TextBlockOrigin set to 0pt x 0pt
-)) (./variables.tex) (./presentation.aux)
+ioning.code.tex) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3names.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3bootstrap.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3basics.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3expan.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3tl.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3seq.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3int.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3quark.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prg.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3clist.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3token.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prop.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3msg.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3file.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3skip.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3keys.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3fp.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3box.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3coffins.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3color.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3luatex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty)
+*************************************************
+* LaTeX warning: "xparse/redefine-command"
+* 
+* Redefining document command \oldstylenums with arg. spec. 'm' on line 107.
+*************************************************
+) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1enc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmr.fd))
+(/usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+(/usr/share/texmf/tex/latex/tipa/t3enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmss.fd)))
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg))))
+(./resources/tikzStyles.tex) (./variables.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrpage2.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty))
+(./handout_pagestyle.tex) (./handout.aux)
 (/usr/share/texmf/tex/latex/tipa/t3cmr.fd)
-*geometry* driver: auto-detecting
-*geometry* detected driver: xetex
-ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
-(./presentation.out) (./presentation.out)
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
-onary/translator-basic-dictionary-English.dict)
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-bibliograph
-y-dictionary/translator-bibliography-dictionary-English.dict)
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-environment
--dictionary/translator-environment-dictionary-English.dict)
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-months-dict
-ionary/translator-months-dictionary-English.dict)
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-numbers-dic
-tionary/translator-numbers-dictionary-English.dict)
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-theorem-dic
-tionary/translator-theorem-dictionary-English.dict) (./presentation.nav)
-[1] (./presentation.toc
-Overfull \hbox (1.19069pt too wide) in paragraph at lines 8--8
- [][]\EU1/HelveticaNeue45Light(0)/m/n/12 Dokumentbeschreibungssprachen[]  
-) <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 27--27
-[][]  
-[2] (./intro.tex [3] (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(./handout.out) (./handout.out) ABD: EveryShipout initializing macros
+(./resources/generation_sequence.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
-<use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 23--23
-[][]  
-[4] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 35--35
-[][]  
-[5] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 46--46
-[][]  
-[6]) (./main.tex
-<use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 7--7
-[][]  
-[7] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 12--12
-[][]  
-[8] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 16--16
-[][]  
-[9] (./resources/generation_sequence.tex)
-<use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 26--26
-[][]  
-[10] <use  "resources/languagemodel.png" >
-<use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 33--33
-[][]  
-[11] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 38--38
-[][]  
-[12]) (./end.tex
-<use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 9--9
-[][]  
-[13] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 19--19
-[][]  
-[14] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 30--30
-[][]  
-[15]) (./presentation.aux) )
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+[]| $[]$ []
+
+Overfull \vbox (20.89499pt too high) has occurred while \output is active
+
+LaTeX Font Warning: Font shape `EU1/MuseoSlab(0)/bx/n' undefined
+(Font)              using `EU1/MuseoSlab(0)/m/n' instead on input line 25.
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def)
+[1] (./handout.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
 (see the transcript file for additional information)
-Output written on presentation.xdv (15 pages, 135092 bytes).
-Transcript written on presentation.log.
+Output written on handout.xdv (1 page, 40540 bytes).
+Transcript written on handout.log.
 This is XeTeX, Version 3.1415926-2.4-0.9998 (TeX Live 2012/Debian)
  restricted \write18 enabled.
 entering extended mode
-(./presentation.tex
+(./handout.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, et
 hiopic, farsi, arabic, pinyin, croatian, bulgarian, ukrainian, russian, slovak,
@@ -350,38 +257,69 @@ speranto, coptic, welsh, irish, interlingua, serbian, serbianc, slovenian, friu
 lan, romansh, estonian, romanian, armenian, uppersorbian, turkish, afrikaans, i
 celandic, kurmanji, polish, portuguese, galician, catalan, spanish, swedish, th
 ai, loaded.
-(/usr/share/texmf/tex/latex/beamer/base/beamer.cls
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasercs.sty)
-Document Class: beamer 2010/06/21 development version 3.10 A class for typesett
-ing presentations (rcs-revision a6b1a8434d30)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasemodes.sty
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasedecode.sty))
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseoptions.sty
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
+Document Class: scrartcl 2012/05/15 v3.11 KOMA-Script document class (article)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package scrlfile, 2011/03/09 v3.09 KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
 
-Package ifpdf Warning: Someone has redefined \pdfoutput.
+))) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocbasic.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize12pt.clo)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
+Package typearea, 2012/05/15 v3.11 KOMA-Script package (type area)
+                  Copyright (C) Frank Neukam, 1992-1994
+                  Copyright (C) Markus Kohm, 1994-
 
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty)
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
-
-Class beamer Warning: ``mathserif'' is obsolete. Use font theme ``serif'' with 
-option ``onlymath'' on input line 346.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo)
-(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+)) (./header_handout.tex (/var/lib/texmf/tex/generic/babel/babel.sty
+(/usr/share/texlive/texmf-dist/tex/generic/babel/ngermanb.ldf
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg)
 (/usr/share/texlive/texmf-dist/tex/xelatex/xetex-def/xetex.def)))
-(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xetexconfig/hyperref.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty))
+
+Package hyperref Message: Driver (autodetected): hxetex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/stringenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+(/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def)
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty)
+(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex)
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty))
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex))
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex))
@@ -423,120 +361,6 @@ option ``onlymath'' on input line 346.
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex)
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex)
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex)))
-(/usr/share/texmf/tex/latex/pgf/utilities/xxcolor.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
-(/usr/share/texlive/texmf-dist/tex/xelatex/xetexconfig/hyperref.cfg)
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
-
-Package hyperref Message: Stopped early.
-
-)
-
-Package hyperref Message: Driver (autodetected): hxetex.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/stringenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaserequires.sty
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasecompatibility.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasefont.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)))
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetranslator.sty
-(/usr/share/texmf/tex/latex/beamer/base/translator/translator.sty
-(/usr/share/texmf/tex/latex/beamer/base/translator/translator-language-mappings
-.tex))) (/usr/share/texmf/tex/latex/beamer/base/beamerbasemisc.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetwoscreens.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseoverlay.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetitle.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasesection.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseframe.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseverbatim.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseframesize.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseframecomponents.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasecolor.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasenotes.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetoc.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetemplates.sty
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseauxtemplates.sty
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseboxes.sty)))
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaselocalstructure.sty
-(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty))
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasenavigation.sty)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetheorems.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty))
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasethemes.sty))
-(/usr/share/texmf/tex/latex/beamer/base/themes/theme/beamerthemedefault.sty
-(/usr/share/texmf/tex/latex/beamer/base/themes/font/beamerfontthemedefault.sty)
-
-(/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemedefault.st
-y)
-(/usr/share/texmf/tex/latex/beamer/base/themes/inner/beamerinnerthemedefault.st
-y)
-(/usr/share/texmf/tex/latex/beamer/base/themes/outer/beamerouterthemedefault.st
-y))) (./header.tex
-(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3names.sty
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3bootstrap.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3basics.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3expan.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3tl.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3seq.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3int.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3quark.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prg.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3clist.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3token.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prop.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3msg.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3file.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3skip.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3keys.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3fp.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3box.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3coffins.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3color.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3luatex.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
-(/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty)
-*************************************************
-* LaTeX warning: "xparse/redefine-command"
-* 
-* Redefining document command \oldstylenums with arg. spec. 'm' on line 107.
-*************************************************
-) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1enc.def)
-(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmr.fd))
-(/usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty
-(/usr/share/texmf/tex/latex/tipa/t3enc.def
-(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmss.fd)))
-(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
-(/var/lib/texmf/tex/generic/babel/babel.sty
-(/usr/share/texlive/texmf-dist/tex/generic/babel/ngermanb.ldf
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def)))
-(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
-(/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def)
-(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg))
-(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty)
-(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex)
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex)
 (/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty)
@@ -592,81 +416,77 @@ s.multipart.code.tex
 (/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.c
 ode.tex)))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryposit
-ioning.code.tex) (./resources/tikzStyles.tex) (./beamerthemeSprd.sty
-(./beamercolorthemeSprd.sty) (./beamerouterthemeSprd.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
-Package: textpos 2012/06/01 1.7h, absolute positioning of text on the page
-Grid set 16 x 16 = 28.45274pt x 16.00467pt
-TextBlockOrigin set to 0pt x 0pt
-)) (./variables.tex) (./presentation.aux)
+ioning.code.tex) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3names.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3bootstrap.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3basics.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3expan.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3tl.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3seq.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3int.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3quark.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prg.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3clist.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3token.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prop.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3msg.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3file.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3skip.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3keys.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3fp.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3box.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3coffins.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3color.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3luatex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty)
+*************************************************
+* LaTeX warning: "xparse/redefine-command"
+* 
+* Redefining document command \oldstylenums with arg. spec. 'm' on line 107.
+*************************************************
+) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1enc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmr.fd))
+(/usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+(/usr/share/texmf/tex/latex/tipa/t3enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmss.fd)))
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg))))
+(./resources/tikzStyles.tex) (./variables.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrpage2.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty))
+(./handout_pagestyle.tex) (./handout.aux)
 (/usr/share/texmf/tex/latex/tipa/t3cmr.fd)
-*geometry* driver: auto-detecting
-*geometry* detected driver: xetex
-ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
-(./presentation.out) (./presentation.out)
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
-onary/translator-basic-dictionary-English.dict)
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-bibliograph
-y-dictionary/translator-bibliography-dictionary-English.dict)
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-environment
--dictionary/translator-environment-dictionary-English.dict)
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-months-dict
-ionary/translator-months-dictionary-English.dict)
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-numbers-dic
-tionary/translator-numbers-dictionary-English.dict)
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-theorem-dic
-tionary/translator-theorem-dictionary-English.dict) (./presentation.nav)
-[1] (./presentation.toc
-Overfull \hbox (1.19069pt too wide) in paragraph at lines 8--8
- [][]\EU1/HelveticaNeue45Light(0)/m/n/12 Dokumentbeschreibungssprachen[]  
-) <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 27--27
-[][]  
-[2] (./intro.tex [3] (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(./handout.out) (./handout.out) ABD: EveryShipout initializing macros
+(./resources/generation_sequence.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
-<use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 23--23
-[][]  
-[4] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 35--35
-[][]  
-[5] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 46--46
-[][]  
-[6]) (./main.tex
-<use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 7--7
-[][]  
-[7] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 12--12
-[][]  
-[8] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 16--16
-[][]  
-[9] (./resources/generation_sequence.tex)
-<use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 26--26
-[][]  
-[10] <use  "resources/languagemodel.png" >
-<use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 33--33
-[][]  
-[11] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 38--38
-[][]  
-[12]) (./end.tex
-<use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 9--9
-[][]  
-[13] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 19--19
-[][]  
-[14] <use  "resources/spreadshirt_logos/sprd_logo_screen_rgb.pdf" >
-Overfull \hbox (25.17082pt too wide) in paragraph at lines 30--30
-[][]  
-[15]) (./presentation.aux) )
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+[]| $[]$ []
+
+Overfull \vbox (20.89499pt too high) has occurred while \output is active
+
+LaTeX Font Warning: Font shape `EU1/MuseoSlab(0)/bx/n' undefined
+(Font)              using `EU1/MuseoSlab(0)/m/n' instead on input line 25.
+
+
+LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 25.
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def)
+[1] (./handout.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+ )
 (see the transcript file for additional information)
-Output written on presentation.pdf (15 pages).
-Transcript written on presentation.log.
+Output written on handout.pdf (1 page).
+Transcript written on handout.log.

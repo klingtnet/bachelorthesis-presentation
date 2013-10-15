@@ -6,12 +6,14 @@
 
 SHELL=/bin/bash
 SCRIPT=build.py
-TEXFILE=content/presentation.tex
-OPTS=--passes 2 --debug
+PRESENTATION=content/presentation.tex
+HANDOUT=content/handout.tex
+OPTS=--passes 2
 
 all:
 	@echo "building presentation ..."
-	@python ${SCRIPT} ${TEXFILE} ${OPTS} 
+	@python ${SCRIPT} ${PRESENTATION} ${OPTS}
+	@python ${SCRIPT} ${HANDOUT} ${OPTS}
 
 clean:
 	@echo "cleaning temporary files ..."

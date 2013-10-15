@@ -1,0 +1,25 @@
+\documentclass[a4paper, 12pt, DIV=12]{scrartcl}
+
+\input{header_handout}
+
+\input{resources/tikzStyles}
+\input{variables}
+
+\usepackage[automark]{scrpage2}
+
+\usepackage{blindtext}
+
+\input{handout_pagestyle}
+\pagestyle{handout}
+
+\begin{document}
+
+\begin{figure}
+    \resizebox{\textwidth}{!}{
+        \input{resources/generation_sequence}
+    }
+    \caption{Sequenzdiagramm des Generators}
+\end{figure}
+
+\label{lastpage}
+\end{document}

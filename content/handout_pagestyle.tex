@@ -1,0 +1,36 @@
+\newpagestyle{handout}%
+    {
+        (\textwidth,0pt)% header line
+        {
+            %even page
+        }
+        {
+            %odd page
+        }
+        {
+            \parbox{\textwidth}{
+                \centering
+                {\footnotesize \sffamily Handout zur Bachelorverteidigung:}\\
+                \enquote{\large \thesisTitle}
+            }            
+        }
+        (\textwidth,.4pt)
+    }
+    {
+        (\textwidth,.4pt)% footer line
+        {
+            %even page
+        }
+        {
+            %odd page
+        }
+        {
+            \centering
+            \footnotesize
+            \textbf{\thesisAuthor}\hfill{\scriptsize\thesisUniversity{} - \thesisUniversityDepartment{}}\hfill
+            S. \pagemark{} / \pageref{lastpage}
+        }%
+        (\textwidth,0pt)
+    }
+
+\setlength{\headsep}{12mm}
