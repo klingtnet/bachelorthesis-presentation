@@ -1,7 +1,9 @@
 # Presentation of bachelor thesis
 
 Author: Andreas Linz
+
 Topic: Generierung und Design einer
+
 Client-Bibliothek für einen RESTful Web
 Service am Beispiel der Spreadshirt-API
 Bachelorverteidigung
