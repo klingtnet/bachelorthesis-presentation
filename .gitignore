@@ -1,4 +1,5 @@
 *.sublime-*
 .build/*
+build.log
 old/*
 play/*
