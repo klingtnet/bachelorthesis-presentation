@@ -109,8 +109,7 @@
 \end{frame}
 
 \begin{frame}[fragile,squeeze]
-    \begin{multicols}{2}
-        \begin{lstlisting}[
+    \begin{lstlisting}[
                 %caption=Point-Klasse als (gekürztes) Beispiel für eine generierte Datenklasse,
                 language=PHP
             ]
@@ -139,6 +138,11 @@
          $this->unit = $unit;
       }
       ...
+    \end{lstlisting}
+\end{frame}
+\begin{frame}[fragile,squeeze]
+    \begin{lstlisting}
+      ...
       public function toXML()
       {
          $xml =  new SimpleXMLElement(/* Point */ '<login xmlns="http://api.spreadshirt.net"/>');
@@ -147,6 +151,15 @@
          $xml->addChild(/* string */ 'x',/* double */ $this->x);
          return $xml->asXML();
       }
+      public static function fromXML(
+            /* SimpleXMLElement */ $xml
+         )
+      {
+         $unit = Unit::fromXML(/* SimpleXMLElement */ $xml->unit);
+         $y = $xml->y;
+         $x = $xml->x;
+         ...
+      }
       ...
       public function getX()
       {
@@ -154,8 +167,7 @@
       }
    }
 ?>
-        \end{lstlisting}
-    \end{multicols}
+    \end{lstlisting}
 \end{frame}
 
 \begin{frame}{Ressourcenklassen}
