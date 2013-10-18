@@ -22,29 +22,30 @@
         \caption{Beispiel-URI, um den Artikel 42 aus dem Warenkorb 84 anzusprechen}
         \label{restURI}
     \end{figure}
-    RESTful Web Service ist eine Webanwendung die den REST Prinzipien entspricht
+    \emph{RESTful Web Service} ist eine Webanwendung die den REST Prinzipien entspricht
 \end{frame}
 
 \subsection{Dokumentbeschreibungssprachen}
 \begin{frame}[squeeze]{Dokumentbeschreibungssprachen}
     \begin{block}{WADL}
-        \begin{itemize}
-            \item maschinenlesbare Beschreibung einer HTTP-basierten Webanwendung
-            \item XML Syntax
-            \item Baumgrammatik
-        \end{itemize}
+        maschinenlesbare Beschreibung einer HTTP-basierten Webanwendung
     \end{block}
     \begin{block}{XSD}
-        \begin{itemize}
-            \item Dokumentbeschreibungssprache zur Definition von Datentypen
-            \item XML-Syntax, XSD ist selber ein gültiges XML-Dokument
-        \end{itemize}
+        Dokumentbeschreibungssprache zur Definition von Datentypen
     \end{block}
+    Gemeinsamkeiten:
+    \begin{itemize}
+        \item XML-Syntax, selbst wieder gültige XML-Dokumente
+        \item Baumgrammatiken
+    \end{itemize}
 \end{frame}
 
 \subsection{Codegenerierung}
 \begin{frame}{Codegenerierung}
 
+    \begin{block}{Codegenerator}
+        Programm welches aus einer \emph{höhersprachigen Spezifikation}, einer Software oder eines Teilaspektes, die \emph{Implementierung erzeugt}
+    \end{block}
     \begin{block}{Vorteile}
         \begin{itemize}
             \item Produktivitässteigerung
@@ -63,7 +64,7 @@
                 \item Mixed-Code Generator
                 \item Partial-Class Generator
             \end{itemize}
-            \item vollständig (Tier-Generator)
+            \item vollständig (Tier\footnote{Stufen}-Generator)
             \item mehrfach (n-Tier Generator)
         \end{itemize}
     \end{block}
@@ -75,19 +76,19 @@
     \begin{itemize}
         \item Applikationsmodell:
         \begin{itemize}
-            \item REST-Modell
-            \item Schema-Modell
+            \item WADL $\rightarrow{}$ REST-Modell
+            \item XSD $\rightarrow{}$ Schema-Modell
         \end{itemize}
         \item Sprachenmodell
         \begin{itemize}
             \item kapselt Zielsprache
             \item enthält Semantik
-            \item Syntax in Ausgabemodul (LanguageVisitor, siehe \cref{sequence})
+            \item[!] Syntax in Ausgabemodul (LanguageVisitor, siehe \cref{sequence})
         \end{itemize}
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Codegenerator}
+\begin{frame}{Generator für die Spreadshirt-API}
     \begin{figure}
         \resizebox{\textwidth}{!}{
             \input{resources/generation_sequence}
@@ -103,16 +104,98 @@
         \item zielsprachenabhängige Repräsentation der Typen aus der XML-Schema Beschreibung
         \item Variablen bilden die Attribute und Elemente aus dem Schematyp ab
         \item Getter- und Setter-Methoden für alle Variablen
-        \item Methoden zur Serialisierung und Deserialisierung in, bzw. aus, XML oder JSON
+        \item transportunabhäniger Datenaustausch mit API $\rightarrow{}$ Methoden zur Serialisierung und Deserialisierung
     \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile,squeeze]
+    \begin{multicols}{2}
+        \begin{lstlisting}[
+                %caption=Point-Klasse als (gekürztes) Beispiel für eine generierte Datenklasse,
+                language=PHP
+            ]
+<?php
+   require_once('Unit.php');
+
+   class Point
+   {
+      private $unit; // unit 
+      private $y; // double 
+      private $x; // double 
+
+      function __construct(
+            /* double */ $y,
+            /* double */ $x
+         )
+      {
+         $this->y = $y;
+         $this->x = $x;
+      }
+
+      public function setUnit(
+            /* unit */ $unit
+         )
+      {
+         $this->unit = $unit;
+      }
+      ...
+      public function toXML()
+      {
+         $xml =  new SimpleXMLElement(/* Point */ '<login xmlns="http://api.spreadshirt.net"/>');
+         $xml->addChild(/* string */ 'unit',/* unit */ $this->unit);
+         $xml->addChild(/* string */ 'y',/* double */ $this->y);
+         $xml->addChild(/* string */ 'x',/* double */ $this->x);
+         return $xml->asXML();
+      }
+      ...
+      public function getX()
+      {
+         return $x = $this->x;
+      }
+   }
+?>
+        \end{lstlisting}
+    \end{multicols}
 \end{frame}
 
 \begin{frame}{Ressourcenklassen}
     \begin{itemize}
-        \item zielsprachenabhängige Abbildung der Ressourcen-
-beschreibungen aus WADL-Datei
+        \item zielsprachenabhängige Abbildung der Ressourcenbeschreibungen aus WADL-Datei
         \item Methoden der Klassen entsprechen den Methoden der abgebildeten Ressource
     \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile, squeeze]
+    \begin{lstlisting}[
+        %caption=Klasse zur Ressource \texttt{users/{userId}/products} als Beispiel für eine Ressourcenklasse,
+        language=PHP
+    ]
+<?php
+   require_once('Static/methods.php');
+   require_once('Static/apiUser.php');
+   /* Create or list products for user. */
+   class UsersUserIdProducts
+   {
+      private $baseUrl = 'http://192.168.13.10:8080/api/v1/'; // string
+      ...
+      /*  */
+      public function POST(
+            /* array */ $parameters, 
+            /* ApiUser */ $apiUser,
+            /* ProductDTO */ $productDTO
+         )
+      { ... }
+      ...
+      function __construct(
+            /* string */ $userId
+         )
+      {
+         $this->userId = $userId;
+         $this->resourceUrl = $this->baseUrl . 'users' . '/' . $userId . 'products';
+      }
+   }
+?>
+    \end{lstlisting}
 \end{frame}
 
 \begin{frame}{statische Klassen}

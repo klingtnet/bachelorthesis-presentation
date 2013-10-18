@@ -9,6 +9,7 @@
 \usepackage{hyperref}
 \usepackage{csquotes}
 \usepackage{multicol}
+\usepackage{listings}
 \usepackage[german]{cleveref}
 
 \usepackage{tikz}
@@ -53,3 +54,30 @@
 
 % hide beamer navigation buttons
 \beamertemplatenavigationsymbolsempty
+
+\definecolor{lightgray}{gray}{0.96}
+\definecolor{darkgray}{gray}{0.4}
+
+\lstset{
+        basicstyle=\ttfamily\tiny,
+        commentstyle=\color{gray},
+        %keywordstyle=\bfseries\color{magenta},
+        keywordstyle=\bfseries,
+        %identifierstyle=\itshape\color{magenta!50!cyan!40!black},
+        identifierstyle=\itshape\color{black},
+        %stringstyle=\itshape\color{cyan!75!black},
+        stringstyle=\rmfamily\slshape,
+        backgroundcolor=\color{lightgray},
+        numbers=left,
+        numberstyle=\rmfamily\tiny\color{gray!50!black},
+        escapeinside={//@}{@//},
+        frame=lines,
+        captionpos=b,
+        breaklines=true,
+        breakautoindent=true,
+        xleftmargin=8mm,
+        framexleftmargin=8mm,
+        aboveskip=\baselineskip
+        %frame=tb   %tblrTBLR
+        %frame=shadowbox
+    }
