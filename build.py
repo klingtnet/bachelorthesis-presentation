@@ -97,7 +97,7 @@ def sync_build_dir():
     """
     source_dir = path_to_texfile
     dest_dir = build_dir
-    return call(build_call("rsync", ["--archive", "--verbose"], source_dir, dest_dir)) 
+    return call(build_call("rsync", ["--recursive", "--verbose"], source_dir, dest_dir)) 
 
 def build_call(*args): # *.foo ellipsis
     """
