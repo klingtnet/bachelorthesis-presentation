@@ -1,7 +1,7 @@
 \section{Hauptteil}
 
 \subsection{Web Services}
-\begin{frame}{RESTful Web Service}
+\begin{frame}{RESTful Web Services}
     \begin{block}{REST}
         \begin{itemize}
             \item \emph{Representational State Transfer} (Gegenständlicher Zustandstransfer)
@@ -28,7 +28,7 @@
 \subsection{Dokumentbeschreibungssprachen}
 \begin{frame}[squeeze]{Dokumentbeschreibungssprachen}
     \begin{block}{WADL}
-        maschinenlesbare Beschreibung einer HTTP-basierten (typischer \emph{RESTful}) Webanwendung
+        maschinenlesbare Beschreibung einer HTTP-basierten Webanwendung (typischerweise \emph{RESTful} Web Service)
     \end{block}
     \begin{block}{XSD}
         Dokumentbeschreibungssprache zur Definition von Datentypen
@@ -210,7 +210,7 @@
     \end{lstlisting}
 \end{frame}
 
-\begin{frame}{statische Klassen}
+\begin{frame}{Infrastrukturklassen}
     \begin{itemize}
         \item wurden manuell erstellt
         \item enthalten gemeinsam genutzten Code ohne variable Bestandteile
@@ -220,4 +220,27 @@
             \item Kapselung der Authentifizierung
         \end{itemize}
     \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{Metriken}
+    \begin{itemize}
+      \item Generierdauer: 23.1s ungecached / 1.25s gecached
+      \item $>60\%$ weniger Codezeilen, im Gegensatz zu manuell erzeugtem Code
+    \end{itemize}
+  \end{block}
+  \begin{table}
+    \begin{longtable}{r r r r}
+      \toprule
+      \rowcolor{lightgray}
+                        & Dateien  & Zeilen    & Zeichen\\
+      \midrule
+      Datenklassen      & 192               & 17455               & 38550\\
+      Ressourcenklassen & 97                & 3730                & 11079\\
+      \midrule
+      $\sum$            & 289               & 21185               & 49629\\
+      \bottomrule
+      %\caption{Metriken zur Menge des generierten Codes (ohne statische Klassen)}
+    \end{longtable} 
+  \end{table}
 \end{frame}
