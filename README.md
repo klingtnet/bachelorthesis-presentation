@@ -2,11 +2,7 @@
 
 Author: Andreas Linz
 
-Topic: Generierung und Design einer
-
-Client-Bibliothek für einen RESTful Web
-Service am Beispiel der Spreadshirt-API
-Bachelorverteidigung
+Topic: Generierung und Design einer Client-Bibliothek für einen RESTful Web Service am Beispiel der Spreadshirt-API
 
 ## Requirements to build
 
